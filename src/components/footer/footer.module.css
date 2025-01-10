@@ -1,0 +1,133 @@
+.footer {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 40px 0 20px;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1.5fr 1fr;
+  padding: 0 20px;
+}
+
+.footerSection h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerSection ul li {
+  margin-bottom: 12px;
+}
+
+.footerSection ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footerSection ul li a:hover {
+  color: #ffd700;
+}
+
+.storeList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.storeList li span {
+  flex: 1;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.directionsLink {
+  color: #ffd700 !important;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.contact {
+  margin-bottom: 30px;
+}
+
+.phoneNumber {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.socialIcons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #ffd700;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #404040;
+  font-size: 14px;
+  color: #888;
+}
+
+.footerSection:nth-child(1),
+.footerSection:nth-child(2) {
+  padding-right: 20px;
+}
+
+.footerSection:nth-child(3) {
+  padding-right: 60px;
+}
+
+@media (max-width: 1024px) {
+  .footerContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .footerSection:nth-child(3) {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footerSection:nth-child(3) {
+    grid-column: auto;
+  }
+}
